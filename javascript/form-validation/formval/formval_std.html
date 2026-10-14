@@ -1,0 +1,133 @@
+<!Doctype html>
+<!-- Student file CWB2005 formval project-->
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>2005 -Form Validation</title>
+<link href="tempcss/2005temp.css" rel="stylesheet" type="text/css" />
+<link href="tempcss/formval.css" rel="stylesheet" type="text/css" />
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		// disable results fields
+		$('.result').attr('disabled', true);
+		
+		// focus
+		$('#fname').focus();
+		
+		// validation
+		$('#order_form').validate({
+			rules: {
+				fname: {
+					required: true
+				},
+				lname: {
+					required: true
+				},
+				street: {
+					required: true
+				},
+				city: {
+					required: true
+				},
+				state: {
+					required: true
+				},
+				zip: {
+					required: true
+				},
+				phone: {
+					required: true
+				},
+				email: {
+					required: true,
+					email: true
+				},
+				quant: {
+					required: true,
+					min: 1,
+					max: 4
+				}
+			},				// end rules
+			messages: {
+				email: {
+					required: "Please supply your e-mail address."
+				},
+				phone: {
+					required: "Please give us your phone number."
+				}
+			}				// end messages
+		});					// end validate
+		
+		// display results
+		$('#quant').blur(function() {
+			var qty = parseInt($('#quant').val());
+			
+			if (qty > 4 || qty < 1) {
+				// display blanks in results boxes
+				$('.result').val("");
+			} else {
+				// calculate and display results
+				var subtotal = qty * 25;
+				var salesTax = subtotal * .065;
+				var grandTotal = subtotal + salesTax;
+				
+				$('#price').val(subtotal);
+				$('#slstax').val(salesTax.toFixed(2));
+				$('#total').val(grandTotal.toFixed(2));
+			}
+		});					// end blur
+	})
+</script>
+
+</head>
+
+<body>
+<div id="holder">
+<div id="heading">
+<h1>CWB2005 Projects</h1>
+</div><!--end heading -->
+
+<div id="prj">
+<h3>Form Validation</h3>
+</div><!-- end prj -->
+<div id="main_content">
+<h2>Workshop Registration</h2>
+<form action="thanks.html" method="post"  id="order_form">
+
+<fieldset>
+<legend>Contact Information</legend>
+<div>
+<label for="fname" class="label">First Name</label><input type="text" name="fname" id="fname"></div>
+<div><label for="lname" class="label">Last Name</label><input type="text" name="lname" id="lname"></div>
+<div><label for="street" class="label">Street</label><input type="text" name="street" id="street"></div>
+<div><label for="city" class="label">City</label><input type="text" name="city" id="city"></div>
+<div><label for="state" class="label">State</label><input type="text" name="state" id="state" value="CO"></div>
+<div><label for="zip" class="label">Zip Code</label><input type="text" name="zip" id="zip"></div>
+<div><label for="phone" class="label">Phone #</label><input type="text" name="phone" id="phone"></div>
+<div><label for="email" class="label">E-mail</label><input type="text" name="email" id="email"></div>
+</fieldset>
+
+
+<fieldset>
+<legend>Register for workshop</legend>
+
+<div><label for="quant" class="label">Quantity</label><input type="text" name="quant" id="quant"  size="3"/></div>
+<div><label for="price" class="label">Price<span class="smaller"> </span></label><input type="text" name="price" id="price" placeholder="$25/each" class="result" /></div>
+<div><label for="slstax" class="label">Sales Tax</label><input type="text" name="slstax" id="slstax" class="result" /></div>
+<div><label for="total" class="label">Total&nbsp;&#36;</label><input type="text" name="total" id="total" class="result" /></div>
+
+</fieldset>
+<input type="submit" value="Order" />
+<input type="reset" value="Clear Form" />
+</form>
+</div><!-- end main_content -->
+<div id="foot">
+<div >&copy; <script>document.write(new Date().getFullYear())</script> Aims Community College</div>
+</div><!-- end foot -->
+</div><!-- end holder -->
+</body>
+</html>

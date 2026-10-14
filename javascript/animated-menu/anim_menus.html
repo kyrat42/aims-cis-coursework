@@ -1,0 +1,112 @@
+<!Doctype html>
+<!-- Student file for cwb205 Animated Menus project -->
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Animated Menus Student file</title>
+<link href="tempcss/205temp.css" rel="stylesheet" type="text/css" />
+<link href="extra_anim.css" rel="stylesheet"  />
+<style type="text/css">
+  h2{
+    font-size:2.5em;
+    margin-top:.2em;
+    border-bottom:2px solid #099;
+    width:350px;
+  }
+  p{
+      font-size:2em;
+  }
+ 
+</style>
+
+<script src = _js/jquery-1.11.0.min.js></script>
+<script src = _js/nav1.1.min.js></script>
+<script>
+	$(document).ready(function() {
+		$('#navigation').navPlugin({
+			'itemWidth': 150,
+			'itemHeight': 30,
+			'navEffect': 'slide',
+			'speed': 30
+		});
+	});
+</script>
+
+</head>
+
+<body>
+<div id="holder">
+<div id="heading">
+<h1>CWB205 Projects</h1>
+</div><!--end heading -->
+
+<div id="prj">
+<h3>Menus</h3>
+</div><!-- end prj -->
+<ul id="navigation">
+  <li><a href="#">home</a></li>
+  <li ><a href="#">bio</a>
+    <ul >
+        <li><a href="#">roots</a></li>
+        <li><a href="#">education</a>
+          <ul>
+              <li><a href="#">elementary school</a></li>
+              <li><a href="#">college</a></li>
+              <li><a href="#">school of hard knocks</a></li>
+          </ul>
+		 </li>
+        <li><a href="#">personal</a></li>
+     </ul>
+	</li>
+   
+    <li><a href="#">hobbies</a>
+      <ul>
+        <li><a href="#">leather working</a></li>
+        <li><a href="#">fly tying</a></li>
+        <li><a href="#">model building</a></li>
+        <li><a href="#">couch potatoing</a>
+            <ul>
+              <li><a href="#">positions</a></li>
+              <li><a href="#">time limits</a></li>
+              <li><a href="#">calorie intake</a></li>
+          </ul>
+		</li>		  
+     </ul>
+	</li>
+    
+    <li ><a href="#">photography</a>
+      <ul>
+         <li><a href="#">landscapes</a></li>
+         <li><a href="#">sports</a>
+            <ul>
+              <li><a href="#">basket weaving</a></li>
+              <li><a href="#">watching</a></li>
+              <li><a href="#">vicariously thru others</a></li>
+            </ul>
+		</li>
+        <li><a href="#">architecture</a></li>
+        <li><a href="#">flora</a></li>
+        <li><a href="#">fauna</a></li>
+      </ul>
+	</li>
+ </ul>
+ <h2>Ut velit illum consequat</h2> 
+  <p>duis duis ut ullamcorper facilisi exerci tation praesent ad dolore eros odio hendrerit et ut hendrerit nostrud consequat. Diam iriure lobortis autem vero enim dolore tation, ut volutpat facilisis, magna hendrerit facilisis duis consectetuer vel commodo accumsan zzril. Nisl aliquip dignissim vero, in augue nibh, vulputate autem nibh aliquip ea delenit esse dolore minim veniam odio. Euismod delenit nulla quis eum, vero vel eum in velit veniam. Quis, exerci ea feugiat nulla molestie, veniam nonummy nulla.</p>
+
+<h2>Tincidunt qui aliquam</h2>
+<p> in ex iriure vero ullamcorper nostrud. Praesent, lorem laoreet erat ex ut vel in zzril. Elit quis consequat in autem ut suscipit, amet vel erat, at. Aliquam, minim in, molestie duis minim tation eum diam dolor augue luptatum dolor in.</p>
+
+<p>Et accumsan velit illum consequat consequat ipsum laoreet duis duis ut ullamcorper facilisi exerci tation praesent ad dolore. Qui odio hendrerit et ut hendrerit nostrud consequat exerci iriure lobortis autem vero enim dolore tation. Tation volutpat facilisis, magna hendrerit facilisis duis consectetuer vel commodo.</p>
+
+<h2>Zzril lobortis, nisl blandit</h2><p> esse dignissim nisl illum eum minim vel consequat luptatum at vel iusto et, ex ex, esse euismod luptatum, ea nulla. Vero exerci feugiat eum augue accumsan feugiat, quis ad. Feugiat te vel, laoreet nisl te commodo elit qui aliquam in ex iriure vero ullamcorper nostrud lorem, lorem laoreet erat ex.</p>
+<h2> Praesent vel in zzril</h2>
+<p> wisi quis consequat in autem ut suscipit, amet vel erat, at duis, minim in, molestie. Velit minim tation eum diam dolor augue luptatum dolor in wisi et ut et adipiscing dolore eu iusto. Duis ad, euismod adipiscing feugait duis, vulputate vulputate, et odio ad qui nonummy aliquip at blandit augue quis dolore diam, wisi. Autem molestie tation iusto, in nostrud, tation esse consequat ut zzril te ullamcorper feugiat tincidunt eros facilisis lobortis, nisl.</p>
+
+
+</div><!-- end main_content -->
+<div id="foot">
+<div >&copy; <script>document.write(new Date().getFullYear())</script> Aims Community College</div>
+</div><!-- end foot -->
+</div><!-- end holder -->
+</body>
+</html>

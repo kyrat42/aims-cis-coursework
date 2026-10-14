@@ -1,0 +1,71 @@
+/* .css template file for cwb2005 projects */
+*{
+  margin:0;
+  padding:0;
+  font-weight:normal;
+   
+}
+body{
+  font-size:62.5%;
+  font-family:Calibri,sans-serif;
+  background-image: url(../images/bgteal.jpg) ;
+  background-repeat:repeat-x;
+  padding:1em;
+}
+#holder{
+  width:793px;
+  margin:0 auto;
+  background-color:#fff;
+  border:1px solid #099;
+}
+p{
+  font-size:1.5em;
+}
+h1{
+  font-size:5.5em;
+  color:#099;
+  text-align:right;
+}
+
+#heading{
+  height:95px;
+  border-bottom:1px solid #099;
+  background-color:#e6e2af;
+  background-image:url(../images/header_mod.jpg);
+  padding-top:1em;
+}
+#heading h1{
+
+}
+#main_content{
+  padding:0 .5em 0 .5em;  
+}
+#prj{
+  margin-top:.3em;
+  /*width:120px; -modifyfor this project only*/
+  width:140px;
+  height:25px;
+  background-color:#000;
+  padding:.2em;
+  padding-top:0;
+  padding-bottom:.4em;
+  margin-left:.1em;
+}
+#prj h3{
+  font-size:1.9em;
+  color:#fff;
+}
+#foot{
+  height:50px;
+  color:#099;
+  font-weight:bold;
+}
+#foot div{
+  float:right;
+ background-color:#e6e2af;
+  height:35px;
+  width:60%;
+  padding-top:1em;
+  padding-left:1em;
+  font-size:1.5em;
+}

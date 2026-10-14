@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Books_Database_DBDataSet" targetNamespace="http://tempuri.org/Books_Database_DBDataSet.xsd" xmlns:mstns="http://tempuri.org/Books_Database_DBDataSet.xsd" xmlns="http://tempuri.org/Books_Database_DBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Books_Database_DBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Books_Database_DBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Books_Database.Properties.Settings.GlobalReference.Default.Books_Database_DBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BooksByCourseViewTableAdapter" GeneratorDataComponentClassName="BooksByCourseViewTableAdapter" Name="BooksByCourseView" UserDataComponentName="BooksByCourseViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Books_Database_DBConnectionString (Settings)" DbObjectName="dbo.BooksByCourseView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Title, ISBN, CourseNumber FROM dbo.BooksByCourseView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Title" DataSetColumn="Title" />
+              <Mapping SourceColumn="ISBN" DataSetColumn="ISBN" />
+              <Mapping SourceColumn="CourseNumber" DataSetColumn="CourseNumber" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Books_Database_DBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Books_Database_DBDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Books_Database_DBDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BooksByCourseView" msprop:Generator_RowEvHandlerName="BooksByCourseViewRowChangeEventHandler" msprop:Generator_RowDeletedName="BooksByCourseViewRowDeleted" msprop:Generator_RowDeletingName="BooksByCourseViewRowDeleting" msprop:Generator_RowEvArgName="BooksByCourseViewRowChangeEvent" msprop:Generator_TablePropName="BooksByCourseView" msprop:Generator_RowChangedName="BooksByCourseViewRowChanged" msprop:Generator_RowChangingName="BooksByCourseViewRowChanging" msprop:Generator_TableClassName="BooksByCourseViewDataTable" msprop:Generator_RowClassName="BooksByCourseViewRow" msprop:Generator_TableVarName="tableBooksByCourseView" msprop:Generator_UserTableName="BooksByCourseView">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Title" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_UserColumnName="Title">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ISBN" msprop:Generator_ColumnPropNameInRow="ISBN" msprop:Generator_ColumnPropNameInTable="ISBNColumn" msprop:Generator_ColumnVarNameInTable="columnISBN" msprop:Generator_UserColumnName="ISBN" type="xs:int" />
+              <xs:element name="CourseNumber" msprop:Generator_ColumnPropNameInRow="CourseNumber" msprop:Generator_ColumnPropNameInTable="CourseNumberColumn" msprop:Generator_ColumnVarNameInTable="columnCourseNumber" msprop:Generator_UserColumnName="CourseNumber">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BooksByCourseView" />
+      <xs:field xpath="mstns:ISBN" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

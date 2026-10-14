@@ -1,0 +1,40 @@
+/*CSS sheet for formVal project cwb205 */
+h2{
+    font-size:4.5em;
+    font-family:serif;
+  }
+  #order_form{
+    font-size:2em;
+    width:650px;
+    margin:0 auto;
+  }
+  .label{
+    float:left;
+    width:200px;
+   text-align:right;
+  }
+  
+  input{
+      margin-left:10px;
+  }
+  fieldset{
+    padding-bottom:.2em;
+    
+  }
+  .smaller{
+    font-size:.6em;
+  }
+  
+/*styles for error messages */
+  label.error{
+    font-weight:bold;
+    font-size:.7em;
+    color:#f00;
+    margin-left:.3em;
+  }
+  /*styles for input boxes with errors */
+  input.error{
+    border:2px solid #900;
+  }
+
+  

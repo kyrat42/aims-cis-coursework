@@ -1,0 +1,73 @@
+/*style sheet bmass.css for prj 7 cwb 205 student .css file */
+
+body{
+  font-family:sans-serif;
+  font-size:62.5%;
+}
+#wrapper{
+  width:700px;
+  margin:0 auto;
+  border:1px solid #000;
+}
+#header{
+  height:129px;
+  background:#fff url(images/main_img.jpg) left top no-repeat;
+  
+}
+#header h2{
+  margin:0;
+  padding-top:1.5em;
+  margin-left:3em;
+  font-size:3em;
+  color:#fff;
+}
+#content{
+  padding:.5em;
+}
+h3{
+  font-size:1.4em;
+}
+.list_head{
+  font-size:1.3em;
+  font-weight:bold;
+}
+.cent{
+  text-align:center;
+}
+p,li{
+  font-size:1.2em;
+}
+#notes{
+  width:340px;
+  float:right;
+}
+#train_col{
+  width:340px;
+ float:left;
+}
+
+.fltleft{
+  float:left;
+  margin:.2em .2em .2em 0;
+}
+.fltright{
+  float:right;
+}
+#output{
+	text-align: center;
+	font-weight: bold;
+}
+#footer{
+  clear:both;
+  height:60px;
+  text-align:center;
+  border-top:1px solid #000;
+  background-color:#9bbe00;
+  color:#fff;
+  font-weight:bold;
+}
+#footer p{
+  margin:0;
+  padding:0;
+  padding-top:2em;
+}

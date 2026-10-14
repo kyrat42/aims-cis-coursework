@@ -1,0 +1,49 @@
+/* extra_anim.css file provides formatting for animated menus plug in - author includes this in head area of tutorial */
+#navigation ul, #navigation li{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  background-color: black;
+ }
+
+#navigation a {
+	background-color: rgb(204,204,204);
+  background-color:#000;
+	text-decoration: none;
+	font: 16px 'ColaborateLightRegular', Arial, sans-serif;
+	text-indent: 10px;
+	border-top: 1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-right:1px solid #999;
+	border-bottom:1px solid #999;
+	margin: 0px;
+	padding: 0px;
+	color: rgb(53,75,118);
+  color:#fff;
+}
+
+#navigation a:hover {
+	border-top:1px solid #999;
+	border-left:1px solid #999;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	background-color: #555;
+	color: white;
+}
+
+#navigation .stack > a {
+	background-image: url(images/arrow.png);
+	background-repeat: no-repeat;
+	background-position: 97% 8px;
+}
+#navigation .stack > a:hover {
+	background-position: 97% -78px;	
+}
+
+#navigation ul .stack > a {
+	background-position: 97% -21px;
+}
+
+#navigation ul .stack > a:hover {
+	background-position: 97% -54px;
+}

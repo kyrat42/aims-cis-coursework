@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Magic 8 Ball</string>
+    <string name="ask">Ask</string>
+    <string name="ball">Magic 8 Ball</string>
+    <string name="certain">It is certain</string>
+    <string name="concentrate">Concentrate and try again</string>
+    <string name="doubtful">Very doubtful</string>
+    <string name="rely">"You may rely on it"</string>
+    <string name="likely">Most likely</string>
+    <string name="yes">Yes</string>
+</resources>

@@ -1,0 +1,19 @@
+# Build output
+bin/
+obj/
+build/
+x64/
+x86/
+Debug/
+Release/
+.gradle/
+*.class
+
+# IDE and OS files
+.vs/
+.idea/
+*.user
+local.properties
+desktop.ini
+Thumbs.db
+.DS_Store

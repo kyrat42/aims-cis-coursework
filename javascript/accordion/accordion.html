@@ -1,0 +1,122 @@
+<!Doctype html>
+<!-- template file for all cwb205 jQuery projects -->
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Accordion - Student File CWB205 - </title>
+<link href="tempcss/205temp.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+h2{
+  font-size:3em;
+}
+h3{
+  font-size:2.5em;
+  margin-top:.2em;
+}
+h3.hilite{
+  padding-left:1em;
+  
+}
+h4{
+  font-size:1.7em;
+}
+p,li{
+  font-size:1.7em;
+}
+li{
+    margin-left:1.2em;
+}
+#main_content h3{
+  padding-left:1em;
+  /*the image is the + sign */
+  background:#adcac8 url(images/open.png) no-repeat left center;
+}
+#main_content h3.close{
+/*this image is the - sign*/
+  background-image: url(images/close.png);
+}
+</style>
+<script src = "_js/_js/jquery-1.11.0.min.js"></script>
+<script src = "accordion.js"></script>
+</head>
+
+<body>
+<div id="holder">
+<div id="heading">
+<h1>CWB205 Projects</h1>
+</div><!--end heading -->
+
+<div id="prj">
+<h3>Accordion</h3>
+</div><!-- end prj -->
+<div id="main_content">
+<h2>Captains of the Enterprise</h2>
+<h3 class="hilite">Johnathan Archer</h3>
+<div>
+  <p>Vessel registry: NX-01</p>
+  <p>Assumed Command: 22151</p>
+  <h4>Resources</h4>
+  <ul>
+      <li><a href="#">Tincidunt qui</a></li>
+      <li><a href="#">Autem nibh</a></li>
+  </ul>
+</div>
+<h3 class="hilite">Christopher Pike</h3>
+<div>
+  <p>Vessel registry: NCC-1701</p>
+  <p>Assumed Command: 2245</p>
+  <h4>Resources</h4>
+  <ul>
+      <li><a href="#">Tincidunt qui</a></li>
+      <li><a href="#">Autem nibh</a></li>
+  </ul>
+</div>
+
+<h3 class="hilite">James T. Kirk</h3>
+<div>
+ <p>Vessel registry: NCC-1701, NCC-1701-A</p>
+  <p>Assumed Command: 2264</p>
+  <h4>Resources</h4>
+  <ul>
+      <li><a href="#">Tincidunt qui</a></li>
+      <li><a href="#">Autem nibh</a></li>
+  </ul>
+</div>
+<h3 class="hilite">John Harriman</h3>
+<div>
+ <p>Vessel registry: NCC-1701-B</p>
+  <p>Assumed Command: 2293</p>
+  <h4>Resources</h4>
+  <ul>
+      <li><a href="#">Tincidunt qui</a></li>
+      <li><a href="#">Autem nibh</a></li>
+  </ul>
+</div>
+<h3 class="hilite">Rachel Garrett</h3>
+<div>
+ <p>Vessel registry: NCC-1701-C</p>
+  <p>Assumed Command: 2332?</p>
+  <h4>Resources</h4>
+  
+  <ul>
+      <li><a href="#">Tincidunt qui</a></li>
+      <li><a href="#">Autem nibh</a></li>
+  </ul>
+  </div>
+<h3 class="hilite">Jean-Luc Picard</h3>
+<div>
+ <p>Vessel registry: NCC-1701-D, NCC-1701-E</p>
+  <p>Assumed Command: 2364</p>
+  <h4>Resources</h4>
+  <ul>
+      <li><a href="#">Tincidunt qui</a></li>
+      <li><a href="#">Autem nibh</a></li>
+  </ul>
+</div>
+</div><!-- end main_content -->
+<div id="foot">
+<div >&copy; <script>document.write(new Date().getFullYear())</script> Aims Community College</div>
+</div><!-- end foot -->
+</div><!-- end holder -->
+</body>
+</html>

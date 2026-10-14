@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Android Business Card</string>
+    <string name="name">Kyra Thomas</string>
+    <string name="title">Software Engineer</string>
+    <string name="address">2151 1/2 19th Ave\nGreeley, CO 80631</string>
+    <string name="linkedInLink">www.linkedin.com/in/kyra-thomas-28165a250</string>
+    <string name="emailAddress">kyrat4242@gmail.com</string>
+</resources>
